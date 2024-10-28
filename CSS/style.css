@@ -1,0 +1,765 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Studio class for css */
+:root{
+    --primarycolor: darkorange;
+    --secondarycolor: darkblue;
+    --thirdcolor: grey;
+    --hovercolor: #FF8D78;
+    --textcolor: #B4B6ED;
+}
+.body{
+    display: flex;
+    width: auto;
+
+}
+
+nav{
+    /*border-bottom: 2px solid black;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    border: 1px dotted black;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: 0.3 ease-in-out;
+}
+
+nav ul li:hover{
+    background-color: var(--primarycolor);
+    scale: 1.1;
+}
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul  li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav button{
+    padding: 8px 10px;
+    border-radius: 16px;
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+}
+
+.bi-list,
+.bi-x{
+    display: none;
+}
+marquee{
+    color: red;
+    position: fixed;
+    top: 50;
+    left: 0;
+    z-index: 70;
+    border: none;
+    background-color: darkorange;
+    gap: 30px;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0;
+}
+
+/*span-1 strong{
+    color: red;
+    background-color: purple;
+}*/
+
+#section-1{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 100px 0;
+}
+
+.section-1-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: left;
+}
+
+.section-1-left h1{
+    font-weight: 800px;
+    color: var(--secondarycolor);
+    font-size: 60px;
+    align-items: left;
+}
+
+.section-1-left p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-1-left button{
+    padding: 8px 15px;
+    border-radius: 25px;
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 800px;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+    width: 150px;
+    height: 40px;
+}
+
+.section-1-left button:hover{
+    background-color: var(--hovercolor);
+    color: black;
+    scale: 1.1;
+}
+
+.section-1-right img{
+    width: 600px;
+}
+
+#section-2{
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 100px 0;
+    gap: 30px;
+}
+
+.section-2-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-2-left h1{
+    font-weight: 400px;
+    color: var(--secondarycolor);
+    font-size: 30px;
+}
+
+.section-2-left p{
+    font-size: 15px;
+    color: var(--textcolor);
+    font-weight: 20px;
+    gap: 15px;
+}
+
+.section-2-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.one, .two{
+    
+}
+
+.one,
+.two,
+.three{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+
+.one div,
+.two div,
+.three div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.one h3,
+.two h3,
+.three h3{
+    padding: 10px 20px;
+    background-color: var(--primarycolor);
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    /*border: 1px solid darkorange;
+    border-radius: 15px;
+    color: var(--secondarycolor);
+    font-weight: 750;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;*/
+}
+
+/*.one h2,
+.two h2,
+.three h2{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}*/
+
+.one div h2,
+.two div h2,
+.three div h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondarycolor);
+}
+
+
+.one div p,
+.two div p,
+.three div p{
+    display: contents;
+    font-size: 18PX;
+    color: var(--textcolor);
+}
+
+#section-3{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 50px 70px;
+    margin: 100px 0;
+    gap: 50px;
+    
+}
+
+#section-3 h1{
+    font-size: 50px;
+    color: var(--secondarycolor);
+    font-weight: 600px;
+    align-items: center;
+
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    gap: 15px;
+}
+
+.person-one,
+.person-two,
+.person-three{
+    display: flex;
+    text-align: center;
+    border: 1px solid grey;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+   /* border: 1px solid grey;*/
+   background-color: rgb(225, 194, 120, 0.3);
+   width: 35%;
+   margin: 0 auto;
+} 
+
+
+.person-one img,
+.person-two img,
+.person-three img{
+    width: 100px;
+    height: 50px;
+    margin-top: -30px;
+}
+
+#section-3 button{
+    padding: 10px 15px;
+    border-radius: 16px;
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    border: 1px solid darkorange;
+}
+
+#section-4{
+    display: flex;
+    background-color: darkorange;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+    gap: 30px;
+    flex-direction: row;
+}
+#section-4 h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700px;
+    flex-direction: column;
+    width: 50%;
+}
+
+    
+#section-4 button{
+    padding: 10px 15px;
+    border-radius: 16px;
+    background-color: white;
+    color: orange;
+    border: none;
+    font-size: 16px;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+    width: 100px;
+   /* border: 1px solid darkorange;*/
+    
+
+}
+
+#section-4 button:hover{
+    background-color: orange;
+}
+
+footer{
+    background-color: #1e1e2f;
+    display: flex;
+    padding: 20px 70px;
+    flex-direction: column;
+    gap: 100px;
+
+}
+
+.top-part{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.logo-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.logo-icon ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.logo-icon ul li{
+    list-style: none;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-icon ul li:hover{
+    transform: scale(1.2);
+}
+
+.logo-icon ul li a{
+    color: white;
+}
+
+    
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+   /* border: 1px solid black;*/
+   
+}
+
+.first-link,
+.second-link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+
+.first-link li,
+.second-link li{
+    list-style: none;
+    padding: 3px;
+}
+
+
+.first-link li a,
+.second-link li a{
+    color: white;
+    font-size: 16px;
+    flex-direction: row;
+    padding: 3px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+
+.first-link li:hover,
+.second-link li:hover{
+    border-bottom: 2px solid var(--primarycolor);
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 50px;
+    width: 100%;
+}
+.copy div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copy input{
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+
+
+.copy button{
+    padding: 5px;
+    border-radius: 16px;
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3sease-in-out;
+    width: 100px;
+    margin: 0 8px;
+}
+
+
+.copy div button:hover{
+    background-color: white;
+    color: var(--primarycolor);
+}
+.copy p{
+    color: grey;
+}
+
+/*RESPONSIVENESS*/
+
+/* small laptop*/
+@media screen and (max-width: 992px) {
+    nav{
+         padding: 20px 20px;
+    }   
+
+    nav ul{
+        gap: 5px;
+    }
+    nav li a{
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #section-1{
+        padding: 0 20px;
+        margin: 50px 0;
+    }
+
+    .section-1-right img{
+        width: 450px;
+    }
+
+    .section-1-left h1{
+        font-weight: 600;
+        font-size: 40px;
+    }
+    
+    .section-1-left p{
+        font-weight: 500;
+        font-size: 18px;
+        width: 90%;
+    }
+    
+    .section-1-left{
+        gap: 20px;
+    }
+    
+    #section-2{
+        padding: 0 40px;
+        gap: 20px;
+    }
+    .section-2-left h2{
+        font-size: 35px;
+    }
+    
+    .section-2-left p{
+        font-size: 16px;
+    }
+
+    .person-one,
+    .person-two,
+    .person-three{
+        gap: 10px;
+    }
+
+    #section-3{
+        padding: 0 40px;
+        margin: 50px 0;
+        gap: 35px;    
+    }
+    
+    .person-one,
+    .person-two,
+    .person-three{
+        padding: 10px;
+    }
+    #section-4{
+        padding: 20px 40px;
+        margin: 100px 0 0;
+    }
+    #section-4 h2{
+        width: 70px;
+    }
+
+    footer{
+        padding: 40px 30px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 576px) {
+    nav ul{
+        display: none;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .bi-list{
+        display: block;
+        font-size: 60px;
+    }
+
+    #section-1{
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .section-1-left{
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    #section-2{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+    /*.section-2-left h2{
+        text-align: center;
+    }*/
+
+    #section-2-left p{
+        text-align: center;
+        gap: 10px; 
+    }
+
+    #section-3{
+        gap: 25px;
+    }
+
+    #section-3 h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .comment{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .person-three,
+    .person-one,
+    .person-two{
+        width: 100%;
+    }
+
+    #section-4{
+        flex-direction: column;
+    }
+
+    #section-4 h1{
+        font-weight: 400;
+        align-items: center;
+        width: 95%;
+        font-size: 50px;
+    }
+
+    footer{
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer .top-part{
+        flex-direction: column-reverse;
+    }
+    .copy{
+        align-items: center;
+        width: 100px;
+    }
+    
+    .copy div{
+        width: 210%;
+        flex-direction: row;
+    
+    }
+    .copy div input{
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    .copy div button{
+        width: 30%;
+        height: 50px;
+        border-radius: 30px;
+       font-size: 16px;
+    }
+    .footer-p{
+        display: block;
+    }
+
+    .copy p{
+        display: none;
+    }
+    .top-part{
+        align-items: center;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .top-part .logo-icons{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    #section-1{
+        gap: 20px;
+    }
+    .section-1-right img{
+        width: 70%;
+    }
+    .section-1-left h1{
+        font-size: 35px;
+    }
+    .section-1-left p{
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    #section-2{
+        padding: 0 20px;
+    }
+    .one div p,
+    .two  div p,
+    .three dv p{
+        font-size: 14px;
+    }
+
+    #section-3{
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    #section-3 h1{
+        font-size: 35px;
+    }
+    .comment{
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    #section-4{
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+        margin: 30px 0 0;
+    }
+    #section-4 h1{
+        font-size: 40px;
+    }
+
+    footer{
+        padding: 20px;
+        gap: 40px;
+    }
+    .copy{
+        width: 100%;
+        margin: 0;
+    }
+    .copy div{
+        width: 100%;
+    }
+    .top-part .logo-icon{
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    }
+
+    .logo-icon{
+        font-size: 40px;
+    }
+    .footer-p{
+        font-size: 16px;
+    }
+}   
