@@ -15,8 +15,6 @@
 }
 .body{
     display: flex;
-    width: auto;
-
 }
 
 nav{
@@ -85,13 +83,13 @@ nav button{
 marquee{
     color: red;
     position: fixed;
-    top: 50;
+    top: 60px;
     left: 0;
     z-index: 70;
     border: none;
     background-color: darkorange;
     gap: 30px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
     margin: 0;
 }
@@ -184,9 +182,6 @@ marquee{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
-}
-.one, .two{
     
 }
 
@@ -356,6 +351,7 @@ footer{
     padding: 20px 70px;
     flex-direction: column;
     gap: 100px;
+    justify-content: space-between;
 
 }
 
@@ -401,7 +397,7 @@ footer{
 .links{
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     gap: 20px;
    /* border: 1px solid black;*/
    
@@ -444,7 +440,7 @@ footer{
     flex-direction: column;
     align-items: end;
     gap: 50px;
-    width: 100%;
+    ;
 }
 .copy div{
     display: flex;
@@ -487,7 +483,7 @@ footer{
 /* small laptop*/
 @media screen and (max-width: 992px) {
     nav{
-         padding: 20px 20px;
+        padding: 20px 20px;
     }   
 
     nav ul{
@@ -499,12 +495,12 @@ footer{
     }
 
     #section-1{
-        padding: 0 20px;
-        margin: 50px 0;
+        padding: 10px 20px;
+        margin: 35px 0;
     }
 
     .section-1-right img{
-        width: 450px;
+        width: 400px;
     }
 
     .section-1-left h1{
